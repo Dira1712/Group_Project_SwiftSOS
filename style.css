@@ -1,3 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    padding: 0 160px;
+}
+
+.navbar {
+    width: 100%;
+    height: 74px;
+    background-color: #C23A3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.download-button {
+    width: 278px;
+    height: 52px;
+    background-color: #174B66;
+    color: #F4F1EA;
+    border-radius: 20px;
+    border: 2px solid #660000;
+    text-align: center;
+    line-height: 52px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.herospace {
+    height: 786px;  
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.herospace-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.herospace-text {
+    flex: 1;
+}
+
+.herospace-image img {
+    max-width: 170%;
+    height: auto;
+}
+
+.herospace-title {
+    font-size: 55px;
+    font-weight: bold;
+    color: #174B66;
+    margin-bottom: 0;
+}
+
+.herospace-subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: #C23A3A;
+    margin-top: 5px;
+}
+
+.herospace-features {
+    text-align: left;
+}
+
+.feature {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.feature-description {
+    font-size: 25px;
+    font-weight: 500;
+    color: #174B66;
+    margin-bottom: 20px;
+}
+
+.ellipse {
+    width: 37.37px;
+    height: 37.37px;
+    border-radius: 50%;
+    background-color: #E02323;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+
+.checkmark {
+    color: #F4F1EA;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section2 {
+    width: 100%;  
+    height: 987px;
+    background-color: #F4F1EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #174B66;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 28px;
+    font-weight: 500;
+    color: #174B66;
+    max-width: 1200px;
+}
+
 body{
     font-family: 'DM Sans';
     position: flex;
