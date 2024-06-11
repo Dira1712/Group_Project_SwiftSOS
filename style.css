@@ -4,6 +4,17 @@ body, html {
     font-family: 'Poppins', sans-serif;
 }
 
+.poppins-primary-font {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-navbar {
+    font-size: 50px;
+}
+
 .container {
     width: calc(100% - 320px);
     margin: 0 auto;
