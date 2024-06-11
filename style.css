@@ -1,0 +1,19 @@
+body{
+    font-family: 'DM Sans';
+    position: flex;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    padding:20px;
+}
+#mockup_text{
+    align-content: center;
+    justify-content: center;
+}
+#mockup_2{
+    background-color: #F4F1EA;
+}
