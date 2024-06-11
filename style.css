@@ -1,6 +1,4 @@
 body, html {
-    margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,28 +13,28 @@ body, html {
     font-size: 50px;
 }
 
-.container {
-    width: calc(100% - 320px);
-    margin: 0 auto;
-    padding: 0 160px;
-}
+/*.container {*/
+/*    width: calc(100% - 320px);*/
+/*    margin: 0 auto;*/
+/*    padding: 0 160px;*/
+/*}*/
 
 .navbar {
     width: 100%;
     height: 74px;
     background-color: #C23A3A;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
     z-index: 1000;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav-link{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
 }
 
 .nav-item {
@@ -69,21 +67,16 @@ body, html {
     background-color: #FFFFFF;
     text-align: left;
     padding: 40px;
-    display: flex;
     align-items: center;
 }
 
-.herospace-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.herospace-text {
-    flex: 1;
-}
+/*.herospace-content {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*}*/
 
 .herospace-image img {
     max-width: 170%;
@@ -104,20 +97,37 @@ body, html {
     margin-top: 5px;
 }
 
-.herospace-features {
+#HeroText {
     text-align: left;
+    /*padding-top: 242px;*/
+    padding-left: 144px;
+}
+
+.HeroHeading{
+    color: #C23A3A;
+    font-family: Poppins;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.HeroSubHeading{
+    color: #174B66;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
 }
 
 .feature {
-    margin-bottom: 20px;
     position: relative;
 }
 
-.feature-description {
-    font-size: 25px;
-    font-weight: 500;
-    color: #174B66;
-    margin-bottom: 20px;
+.herospace-features {
+    text-align: left;
 }
 
 .ellipse {
@@ -125,9 +135,6 @@ body, html {
     height: 37.37px;
     border-radius: 50%;
     background-color: #E02323;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 10px;
     float: left;
     position: relative;
@@ -141,37 +148,58 @@ body, html {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.feature-description {
+    font-size: 25px;
+    font-weight: 500;
+    color: #174B66;
+    margin-bottom: 20px;
+}
+
+.app-store-button{
+    width: 171px;
+    height: 51px;
+    background-color: #000;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.app-store-button span span{
+    font-size: 20px;
+}
 
 .section2 {
     width: 100%;  
-    height: 987px;
+    /*height: 987px;*/
     background-color: #F4F1EA;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
 }
 
-.section-title {
+.section2-title {
     font-size: 45px;
     font-weight: bold;
     color: #174B66;
     margin-bottom: 20px;
 }
 
-.section-description {
+.section2-description {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
     font-size: 28px;
+    font-style: normal;
     font-weight: 500;
-    color: #174B66;
-    max-width: 1200px;
+    line-height: normal;
 }
 
 body{
-    font-family: 'DM Sans';
-    position: flex;
+    font-family: 'DM Sans', serif;
 }
+
 section{
     display: flex;
     flex-direction: column;
@@ -180,10 +208,32 @@ section{
     display: flex;
     padding:20px;
 }
+
+/* todo make this a class or else this will cause an error on the page. id with same name can't be used twice in html page*/
 #mockup_text{
     align-content: center;
     justify-content: center;
 }
 #mockup_2{
     background-color: #F4F1EA;
+}
+
+
+.radar_rescue_heading {
+    color: #174B66;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.radar_rescue_card1 {
+    background-color: #C23A3A;
+    color: white;
+}
+
+.radar_rescue_card2 {
+    background-color: #174B66;
+    color: white;
 }
