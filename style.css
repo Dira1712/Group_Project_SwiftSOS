@@ -196,10 +196,6 @@ body, html {
     line-height: normal;
 }
 
-body{
-    font-family: 'DM Sans', serif;
-}
-
 section{
     display: flex;
     flex-direction: column;
@@ -210,14 +206,64 @@ section{
 }
 
 /* todo make this a class or else this will cause an error on the page. id with same name can't be used twice in html page*/
-#mockup_text{
+#mockup_text_1{
     align-content: center;
     justify-content: center;
+    margin-right:10rem;
+    color: #174B66;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+#mockup_text_2{
+    align-content: center;
+    justify-content: center;
+    margin-left:10rem;
+    color:#174B66;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 #mockup_2{
     background-color: #F4F1EA;
+    height:fit-content;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    align-content: center;
+}
+.learnmore_link{
+    /* text-decoration-color: #C23A3A; */
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #000;
+    position: relative;
+}
+.learnmore_link::after{
+    content: ''; /* Creates a pseudo-element */
+            position: absolute;
+            left: 0;
+            bottom: -0.3rem; 
+            width: 100%;
+            height: 3px; 
+            background-color:#C23A3A;
 }
 
+.learnmore_link:hover{
+    text-decoration-color: #C23A3A;
+    color: #C23A3A;
+}
+.section_title{
+    font-size: 60px;
+    font-weight: 700;
+}
+.section_paragraph{
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+.the-mockups{
+    margin-top:10rem;
+}
 
 .radar_rescue_heading {
     color: #174B66;
@@ -229,13 +275,47 @@ section{
 }
 
 .radar_rescue_card1 {
-    background-color: #C23A3A;
-    color: white;
+    width: 18rem;
+    background-color: #C23A3A !important;
+    color: white !important;
+    border-radius: 25px !important;
+    height: 293.903px !important;
+    box-shadow: 12px 12px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 .radar_rescue_card2 {
-    background-color: #174B66;
-    color: white;
+    background-color: #174B66 !important;
+    color: white !important;
+    border-radius: 25px !important;
+    height: 293.903px !important;
+    box-shadow: 12px 12px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.radar_rescue_card_title{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.radar_rescue_card_text{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.radar_rescue_card_link{
+    color: #F4F1EA !important;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .col img {
@@ -243,5 +323,4 @@ section{
     height: auto;  
     margin: 0 auto;  
 }
-
 
