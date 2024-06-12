@@ -48,6 +48,10 @@ body, html {
     font-weight: 600;
 }
 
+.nav-link:hover {
+    color: #174B66;
+}
+
 .download-button {
     width: 278px;
     height: 52px;
@@ -60,6 +64,30 @@ body, html {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.download-button:hover {
+    color: #174B66;
+    background-color: #F4F1EA;
+}
+
+
+.download-button .button-icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .download-button {
+        width: auto;
+    }
+
+    .download-button .display-text {
+        display: none;
+    }
+    .download-button .button-icon {
+        display: inline-block;
+    }
 }
 
 .herospace {
@@ -213,7 +241,6 @@ section {
     padding: 20px;
 }
 
-/* todo make this a class or else this will cause an error on the page. id with same name can't be used twice in html page*/
 #mockup_text_1 {
     align-content: center;
     justify-content: center;
