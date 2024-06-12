@@ -27,7 +27,7 @@ body, html {
     z-index: 1000;
 }
 
-.nav-link{
+.nav-link {
     color: #FFF;
     font-family: Poppins;
     font-size: 18px;
@@ -63,11 +63,16 @@ body, html {
 }
 
 .herospace {
-    height: 786px;  
+    height: 786px;
     background-color: #FFFFFF;
     text-align: left;
     padding: 40px;
     align-items: center;
+    /*background: no-repeat url("./assets/Vector-Image2.png");*/
+    /*background: no-repeat url("./assets/Vector-Image.png");*/
+    background: no-repeat
+    linear-gradient(to bottom, rgba(255, 0, 0, 0.3), rgba(255, 255, 255, 0.73)),
+    url('assets/Vector.png');
 }
 
 /*.herospace-content {*/
@@ -103,7 +108,7 @@ body, html {
     padding-left: 144px;
 }
 
-.HeroHeading{
+.HeroHeading {
     color: #C23A3A;
     font-family: Poppins;
     font-size: 55px;
@@ -112,7 +117,7 @@ body, html {
     line-height: normal;
 }
 
-.HeroSubHeading{
+.HeroSubHeading {
     color: #174B66;
     font-family: Poppins;
     font-size: 30px;
@@ -148,14 +153,15 @@ body, html {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .feature-description {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     color: #174B66;
     margin-bottom: 20px;
 }
 
-.app-store-button{
+.app-store-button {
     width: 171px;
     height: 51px;
     background-color: #000;
@@ -165,12 +171,12 @@ body, html {
     font-size: 12px;
 }
 
-.app-store-button span span{
+.app-store-button span span {
     font-size: 20px;
 }
 
 .section2 {
-    width: 100%;  
+    width: 100%;
     /*height: 987px;*/
     background-color: #F4F1EA;
     justify-content: center;
@@ -182,6 +188,7 @@ body, html {
 .section2-title {
     font-size: 45px;
     font-weight: bold;
+    font-family: Poppins;
     color: #174B66;
     margin-bottom: 20px;
 }
@@ -196,73 +203,81 @@ body, html {
     line-height: normal;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
 }
-.row{
+
+.row {
     display: flex;
-    padding:20px;
+    padding: 20px;
 }
 
 /* todo make this a class or else this will cause an error on the page. id with same name can't be used twice in html page*/
-#mockup_text_1{
+#mockup_text_1 {
     align-content: center;
     justify-content: center;
-    margin-right:10rem;
+    margin-right: 10rem;
     color: #174B66;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
+
 }
-#mockup_text_2{
+
+#mockup_text_2 {
     align-content: center;
     justify-content: center;
-    margin-left:10rem;
-    color:#174B66;
+    margin-left: 10rem;
+    color: #174B66;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-#mockup_2{
+
+#mockup_2 {
     background-color: #F4F1EA;
-    height:fit-content;
+    height: fit-content;
     padding-top: 10rem;
     padding-bottom: 10rem;
     align-content: center;
 }
-.learnmore_link{
+
+.learnmore_link {
     /* text-decoration-color: #C23A3A; */
     text-decoration: none;
     font-family: 'Poppins';
     color: #000;
     position: relative;
 }
-.learnmore_link::after{
+
+.learnmore_link::after {
     content: ''; /* Creates a pseudo-element */
-            position: absolute;
-            left: 0;
-            bottom: -0.3rem; 
-            width: 100%;
-            height: 3px; 
-            background-color:#C23A3A;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    width: 100%;
+    height: 3px;
+    background-color: #C23A3A;
 }
 
-.learnmore_link:hover{
+.learnmore_link:hover {
     text-decoration-color: #C23A3A;
     color: #C23A3A;
 }
-.section_title{
+
+.section_title {
     font-size: 60px;
     font-weight: 700;
 }
-.section_paragraph{
+
+.section_paragraph {
     font-size: 18px;
     font-family: 'Poppins';
 }
-.the-mockups{
-    margin-top:10rem;
+
+.the-mockups {
+    margin-top: 10rem;
 }
 
 .radar_rescue_heading {
@@ -291,7 +306,7 @@ section{
     box-shadow: 12px 12px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.radar_rescue_card_title{
+.radar_rescue_card_title {
     color: #FFF;
     font-family: Poppins;
     font-size: 18px;
@@ -300,7 +315,7 @@ section{
     line-height: normal;
 }
 
-.radar_rescue_card_text{
+.radar_rescue_card_text {
     color: #FFF;
     font-family: Poppins;
     font-size: 16px;
@@ -309,18 +324,31 @@ section{
     line-height: normal;
 }
 
-.radar_rescue_card_link{
-    color: #F4F1EA !important;
+.col img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footerListHeading {
+    color: #F4F1EA;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.col img {
-    width: auto%;  
-    height: auto;  
-    margin: 0 auto;  
+.footerListItem {
+    color: #F4F1EA;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
+
+/*.text-underlined {*/
+/*    text-decoration-color: red;*/
+/*}*/
 
