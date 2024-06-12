@@ -237,3 +237,10 @@ section{
     background-color: #174B66;
     color: white;
 }
+
+.col img {
+    width: auto%;  
+    height: auto;  
+    display: block;  
+    margin: 0 auto;  
+}
