@@ -318,8 +318,9 @@ section{
     line-height: normal;
 }
 
-
-
-
-
+.col img {
+    width: auto%;  
+    height: auto;  
+    margin: 0 auto;  
+}
 
